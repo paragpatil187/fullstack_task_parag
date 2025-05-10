@@ -13,7 +13,7 @@ const TaskInput = () => {
   };
 
   return (
-    <div className="flex gap-2 mt-4 px-4">
+    <div className="flex gap-2 mt-4 ">
       <input
         value={task}
         onChange={(e) => setTask(e.target.value)}
