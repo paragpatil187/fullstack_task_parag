@@ -4,13 +4,11 @@ import TaskList from '../components/TaskList';
 
 const Home = () => {
   return (
-    <main className="bg-gray-100 min-h-[screen]">
-        <div className="min-h-screen flex items-center justify-center p-5 bg-white">
-        <div className="w-full max-w-[759px] max-h-[742px] border rounded-md shadow p-4 bg-white">
-      <AppHeader/>
-      <TaskInput />
-      <TaskList />
-      </div>
+    <main className="bg-gray-100 min-h-screen flex items-center justify-center px-4 py-8">
+      <div className="w-full max-w-[759px] border rounded-md shadow p-6 bg-white">
+        <AppHeader />
+        <TaskInput />
+        <TaskList />
       </div>
     </main>
   );
