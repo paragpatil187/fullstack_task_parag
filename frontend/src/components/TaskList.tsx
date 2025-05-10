@@ -8,8 +8,13 @@ const TaskList = () => {
 
   useEffect(() => {
     // Initial fetch
-    axios.get('https://fullstack-task-parag.onrender.com/fetchAllTasks')
-      .then(res => setTasks(res.data))
+    axios.get('https://fullstack-task-parag.onrender.com/fetchAllTasks')   //     http://localhost:5000/fetchAllTasks
+      .then(res =>{
+        const normalized = res.data.map((task: any) =>
+            typeof task === 'string' ? { content: task } : task
+          );
+          setTasks(normalized);
+      })
       .catch(err => console.error(err));
 
     // Listen for WebSocket updates
@@ -26,11 +31,11 @@ const TaskList = () => {
 
   return (
     <div>
-      <h2 className="text-sm font-semibold mb-2">Notes</h2>
+      <h2 className="text-md font-bold mb-2">Notes</h2>
       <div className="max-h-60 overflow-y-auto rounded px-2 py-1 text-sm space-y-1">
         
           {tasks.map((task, index) => (
-            <div key={index} className="border-b py-1">
+            <div key={index} className="border-b py-2 text-sm ">
               {task.content}
             </div>
           ))}

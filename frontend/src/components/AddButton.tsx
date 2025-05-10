@@ -8,7 +8,7 @@ const AddButton: React.FC<AddButtonProps> = ({ onClick }) => {
   return (
     
     <button
-      className="bg-orange-600 text-white px-3 py-1 rounded text-sm flex items-center gap-2"
+      className="bg-[#92400E] text-white px-4 py-1 rounded text-base flex items-center gap-2 "
       onClick={onClick}
       aria-label="Add new note"
     >
@@ -17,7 +17,7 @@ const AddButton: React.FC<AddButtonProps> = ({ onClick }) => {
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
                 </svg>
                 </div>
-      <span className="w-12">Add</span>
+      <span className="font-bold ">Add</span>
     </button>
     
   );

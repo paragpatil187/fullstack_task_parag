@@ -3,8 +3,8 @@ import React from "react";
 const AppHeader: React.FC = () => {
   return (
     <header className="flex items-center gap-2 mb-4">
-        <span className="text-2xl">📝</span>
-        <h1 className="text-lg font-semibold">Note App</h1>
+         <img src="/notesIcon.svg" alt="Note Icon" className="w-[86px] h-[86px]" />
+        <div className="text-5xl font-bold">Note App</div>
      
     </header>
   );
