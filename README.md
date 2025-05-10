@@ -21,7 +21,7 @@ A full-stack task management app with real-time updates using WebSockets, Redis 
 
 1. Clone and navigate to the backend repo:
     ```bash
-    git clone https://github.com/your-username/task-backend.git
+    git clone https://github.com/paragpatil187/fullstack_task_parag/backend.git
     cd task-backend
     ```
 2. Install dependencies:
@@ -43,7 +43,7 @@ A full-stack task management app with real-time updates using WebSockets, Redis 
 
 1. Clone and navigate to the frontend repo:
     ```bash
-    git clone https://github.com/your-username/task-frontend.git
+    git clone https://github.com/paragpatil187/fullstack_task_parag/frontend.git
     cd task-frontend
     ```
 2. Install dependencies:
