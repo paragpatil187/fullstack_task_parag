@@ -31,7 +31,7 @@ const TaskList = () => {
 
   return (
     <div>
-      <h2 className="text-md font-bold mb-2">Notes</h2>
+      <h2 className="text-md font-bold mb-2 mt-4">Notes</h2>
       <div className="max-h-60 overflow-y-auto rounded px-2 py-1 text-sm space-y-1">
         
           {tasks.map((task, index) => (
