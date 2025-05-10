@@ -8,7 +8,7 @@ const TaskList = () => {
 
   useEffect(() => {
     // Initial fetch
-    axios.get('http://localhost:5000/fetchAllTasks')
+    axios.get('https://fullstack-task-parag.onrender.com/fetchAllTasks')
       .then(res => setTasks(res.data))
       .catch(err => console.error(err));
 
