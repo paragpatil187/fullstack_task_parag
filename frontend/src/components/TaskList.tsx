@@ -30,7 +30,7 @@ const TaskList = () => {
   }, []);
 
   return (
-    <div>
+    <div className='px-4'>
       <div className="text-md font-bold mb-2 mt-4">Notes</div>
       <div className="max-h-60 overflow-y-auto rounded px-2 py-1 text-sm space-y-1">
         
